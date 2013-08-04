@@ -3,6 +3,10 @@ L.TransformMarker = L.Marker.extend({
 		this._transform = transform;
 	},
 
+	clearTransform: function () {
+		this._transform = null;
+	},
+
 	_setPos: function (pos) {
 		L.Marker.prototype._setPos.call(this, pos);
 
